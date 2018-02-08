@@ -46,7 +46,7 @@ var push = exports.push = (0, _ramda.curry)(function (x, arr) {
 });
 
 var lens = function lens(x) {
-  return typeof x === 'number' ? (0, _ramda.lensIndex)(x) : typeof x === 'string' ? lensProp(x) : new Error('All arguments to lens must be either integers or strings');
+  return typeof x === 'number' ? (0, _ramda.lensIndex)(x) : typeof x === 'string' ? (0, _ramda.lensProp)(x) : new Error('All arguments to lens must be either integers or strings');
 };
 
 var lensPath = function lensPath(p) {
@@ -58,15 +58,15 @@ var lens_ = exports.lens_ = (0, _ramda.memoize)(function (p) {
 });
 
 var set_ = exports.set_ = (0, _ramda.curry)(function (p, x, o) {
-  return set(lens_(p), x, o);
+  return (0, _ramda.set)(lens_(p), x, o);
 });
 
 var over_ = exports.over_ = (0, _ramda.curry)(function (p, f, o) {
-  return over(lens_(p), f, o);
+  return (0, _ramda.over)(lens_(p), f, o);
 });
 
 var view_ = exports.view_ = (0, _ramda.curry)(function (p, o) {
-  return view(lens_(p), o);
+  return (0, _ramda.view)(lens_(p), o);
 });
 
 var lensMutations = {

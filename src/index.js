@@ -1,4 +1,4 @@
-import { remove, lensIndex, compose, map, curry, memoize } from 'ramda'
+import { remove, lensIndex, lensProp, compose, map, curry, memoize, set, over, view } from 'ramda'
 
 const LIB_NAME = 'DEMUT'
 const SHOULD_BE_HANDLED = `THIS_ACTION_SHOULD_BE_HANDLED_BY_${LIB_NAME}`
