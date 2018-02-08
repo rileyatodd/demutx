@@ -1,0 +1,27 @@
+{
+  "name": "demutx",
+  "version": "1.0.0",
+  "description": "\"Declaritive mutations for redux\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rileyatodd/demutx.git"
+  },
+  "keywords": [
+    "declaritive",
+    "mutation",
+    "immutability",
+    "action",
+    "reducer",
+    "enhancer"
+  ],
+  "author": "Riley Todd <rileyatodd@gmail.com> (http://rileyatodd.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rileyatodd/demutx/issues"
+  },
+  "homepage": "https://github.com/rileyatodd/demutx#readme"
+}
