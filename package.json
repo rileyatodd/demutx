@@ -4,7 +4,8 @@
   "description": "\"Declaritive mutations for redux\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/index.js -o index.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,13 @@
   "bugs": {
     "url": "https://github.com/rileyatodd/demutx/issues"
   },
-  "homepage": "https://github.com/rileyatodd/demutx#readme"
+  "homepage": "https://github.com/rileyatodd/demutx#readme",
+  "dependencies": {
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
 }
